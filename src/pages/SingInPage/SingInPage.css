@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+}
+
+.singIn {
+    width: 100%;
+    /* height: 100%; */
+    height: 1100px;
+    background: #000000;
+}
+
+
+.singIn-background {
+    width: 100%;
+    /* height: 100%; */
+    height: 1100px;
+    background-image: url(/src/assets/Frame.svg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover; 
+}
+
+.singIn-box {
+    width: 95%;
+    /* height: 95%; */
+    height: 1000px;
+    margin: 0 auto;    
+}
+
+.singIn-btnPixema {
+    width: 175px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.0);
+    border: none;
+    margin-top: 40px;
+    margin-bottom: 200px;
+    text-align: left;
+}
+
+.singIn-btnPixema_hover {
+    cursor: pointer;
+}
+
+.singIn-box-form-dark {
+    width: 534px;
+    height: 490px;
+    padding: 40px 0px 0px 40px;
+    border-radius: 10px;
+    background: #242426;
+    margin: 0 auto;
+}
+
+.singIn-box-form-light {
+    width: 534px;
+    height: 490px;
+    padding: 40px 0px 0px 40px;
+    border-radius: 10px;
+    background: white;
+    margin: 0 auto;
+}
+
+.singIn-box-form-input-dark {
+    width: 480px;
+    height: 56px;
+    border-radius: 10px;
+    background: #323537;
+    border: none;
+    padding-left: 14px;
+}
+
+.singIn-box-form-input-light {
+    width: 480px;
+    height: 56px;
+    border-radius: 10px;
+    background: white;
+    padding-left: 14px;
+    border-color: #AFB2B6;
+}
+
+.mini-button-dark {
+    width: 150px;
+    height: 24px;
+    font-family: Exo 2;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    border: none;
+    color: #797c7e;
+    background: #242426;
+    margin-top: 10px;
+}
+
+.mini-button-light {
+    width: 150px;
+    height: 24px;
+    font-family: Exo 2;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    border: none;
+    color: #797c7e;
+    background: white;
+    margin-top: 10px;
+}
+
+.mini-button-light:hover {
+    cursor: pointer;
+}
+
+.mini-button-dark:hover {
+    cursor: pointer;
+}
+
+.btn-singIn {
+    width: 494px;
+    height: 56px;
+    border-radius: 10px;
+    background: #7B61FF;
+    color: white;
+    border: none;
+    font-family: Exo 2;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 40px 0px 30px 0px;
+}
+
+.btn-singIn:hover {
+    cursor: pointer;
+}
+
+.text-dark {
+    font-family: Exo 2;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    border: none;
+    color: #797c7e;
+    background: #242426;
+    margin: 0 auto;
+    padding-left: 30%;
+}
+
+.text-light {
+    font-family: Exo 2;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    border: none;
+    color: #797c7e;
+    background: white;
+    margin: 0 auto;
+    padding-left: 30%;
+}
+
+.btn-mini-singIn-dark {
+    border: none;
+    color: #7B61FF;
+    background: #242426;
+}
+
+.btn-mini-singIn-light {
+    border: none;
+    color: #7B61FF;
+    background: white;
+}
+
+.btn-mini-singIn-light:hover {
+    cursor: pointer;
+}
+
+.btn-mini-singIn-dark:hover {
+    cursor: pointer;
+}
+
+.footer {
+    width: 180px;
+    height: 24px;
+    font-family: Exo 2;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #FFFFFF;
+    margin: 0 auto;
+}

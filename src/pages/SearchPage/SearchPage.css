@@ -1,0 +1,40 @@
+.SearchPage-dark {
+    height: 1000px;
+    width: 100%;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.SearchPage-light {
+    height: 1000px;
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.SearchPage-box {
+    width: 1000px;
+    height: 900px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.button-show-more {
+    margin: 0 auto;
+}
+
+.show-more {
+    width: 160px;
+    height: 40px;
+    border-radius: 40px;
+    background: #6c6c6c;
+    color: white;
+    font-family: Exo 2;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.show-more {
+    cursor: pointer;
+}

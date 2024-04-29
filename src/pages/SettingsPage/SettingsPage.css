@@ -1,0 +1,239 @@
+.Settings-dark {
+    height: 1000px;
+    width: 100%;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.Settings-light {
+    height: 1000px;
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.Settings-box {
+    width: 1000px;
+    height: 900px;
+    margin: 0 auto;
+    align-content: space-between;
+}
+
+.Settings-box-profile {
+    width: 970px;
+    height: 250px;
+    margin-top: 5px;
+}
+
+.box-profile-dark {
+    width: 970px;
+    height: 168px;
+    border-radius: 10px;
+    background: #242426;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-profile-light {
+    width: 970px;
+    height: 168px;
+    border-radius: 10px;
+    background: white;
+    border: 1px solid #AFB2B6;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Settings-box-password {
+    width: 970px;
+    height: 360px;
+    margin-top: 10px;
+}
+
+.box-password-dark {
+    width: 970px;
+    height: 280px;
+    border-radius: 10px;
+    background: #242426;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+} 
+
+.box-password-light {
+    width: 970px;
+    height: 280px;
+    border-radius: 10px;
+    background: white;
+    border: 1px solid #AFB2B6;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+} 
+
+.box-input-dark {
+    width: 400px;
+    height: 56px;
+    border-radius: 10px;
+    background-color: #323537;
+    border: none;
+    padding-left: 10px;
+}
+
+.box-input-light {
+    width: 400px;
+    height: 56px;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid #AFB2B6;
+    padding-left: 10px;
+}
+
+.box-password-right {
+    width: 400px;
+    height: 115px;
+}
+
+.Settings-box-color {
+    width: 970px;
+    height: 170px;
+    margin-top: 10px;
+}
+
+.box-color-dark {
+    width: 970px;
+    height: 100px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.box-color-light {
+    width: 970px;
+    height: 100px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.btn-light {
+    width: 56px;
+    height: 56px;
+    border-radius: 10px;
+    border: 1px solid #AFB2B6;
+    background-color: white;
+    margin: 15px;
+    margin-top: 17px;
+}
+
+.btn-dark {
+    width: 56px;
+    height: 56px;
+    border-radius: 10px;
+    border: 1px solid #AFB2B6;
+    background-color: white;
+}
+
+.btn-theme:hover {
+    cursor: pointer;
+}
+
+.Settings-box-btn {
+    width: 570px;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-left: 400px;
+}
+
+.btn-Cancel-dark {
+    width: 266px;
+    height: 56px;
+    border-radius: 10px;
+    background-color: #323537;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: Exo 2;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+}
+
+.btn-Cancel-light {
+    width: 266px;
+    height: 56px;
+    border-radius: 10px;
+    background-color: white;
+    border-color: #323537;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: Exo 2;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+}
+
+.btn-Cancel-dark:hover {
+    cursor: pointer;
+}
+
+.btn-Cancel-light:hover {
+    cursor: pointer;
+}
+
+.btn-Save {
+    width: 266px;
+    height: 56px;
+    border-radius: 10px;
+    background-color: #7B61FF;
+    color: white;
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: Exo 2;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+}
+
+.btn-Save:hover {
+    cursor: pointer;
+}
+
+.footer-dark {
+    width: 180px;
+    height: 24px;
+    font-family: Exo 2;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #FFFFFF;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.footer-light {
+    width: 180px;
+    height: 24px;
+    font-family: Exo 2;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #AFB2B6;
+    margin: 0 auto;
+    padding-top: 20px;
+}

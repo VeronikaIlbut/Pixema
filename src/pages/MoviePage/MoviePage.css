@@ -1,0 +1,196 @@
+.MoviePage-dark {
+    height: 1000px;
+    width: 100%;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.MoviePage-light {
+    height: 1000px;
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.MoviePage-box {
+    width: 1000px;
+    height: 900px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.btn-box {
+    width: 250px;
+    height: 56px;
+}
+
+.smallBtn {
+    width: 122px;
+    height: 56px;
+    font-family: Exo 2;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 20px;
+    color: white; 
+    background-color: #7b7b7b;
+}
+
+.film-box-poster {
+    width: 266px;
+    height: 356px;
+    border-radius: 20px;
+}
+
+.smallBtn {
+    cursor: pointer;
+}
+
+.smallBtn-ADD {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.smallBtn-DELETE {
+    border-radius: 0px 10px 10px 0px;
+}
+
+
+
+
+
+
+.info {
+    width: 70%;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.info-genre {
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color:#AFB2B6;
+    font-family: "Exo 2";
+    margin-top: 0px;
+}
+
+.info-title-dark {
+    width: 100%;
+    height: auto;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+    color:white;
+    font-family: "Exo 2";
+    margin-top: 0px;
+}
+
+.info-title-light {
+    width: 100%;
+    height: auto;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+    color:#242426;
+    font-family: "Exo 2";
+    margin-top: 0px;
+}
+
+.info-rating {
+    width: 230px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating {
+    width: 40px;
+    height: 100%;
+    background-color: #00A340;
+    color: white;
+    font-family: "Exo 2";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.imdb-box {
+    width: 80px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #7b7b7b;
+    border-radius: 5px;
+}
+
+.imdb-rating {
+    color: white;
+    font-family: "Exo 2";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    height: 100%;
+    width: auto;
+    margin: 0px;
+}
+
+.film-description-dark {
+    width: 100%;
+    height: auto;
+    color: white;
+    font-family: "Exo 2";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 40px;
+}
+
+.film-description-light {
+    width: 100%;
+    height: auto;
+    color: #242426;
+    font-family: "Exo 2";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 40px;
+}
+
+.info-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.info-title {
+    width: 85px;
+    color: #AFB2B6;
+    font-family: "Exo 2";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.info-description-light {
+    color: #242426;
+    font-family: "Exo 2";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    padding-left: 50px;
+}
+
+.info-description-dark {
+    color: white;
+    font-family: "Exo 2";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    padding-left: 50px;
+}
+

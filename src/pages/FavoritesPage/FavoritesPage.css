@@ -1,0 +1,67 @@
+.FavoritesPage-dark {
+    height: 1000px;
+    width: 100%;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.FavoritesPage-light {
+    height: 1000px;
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.FavoritesPage-box {
+    width: 1400px;
+    height: 900px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.FavoritesPage-box-NoFavorites{
+    width: 404px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+.NoFavorites-text {
+    font-family: Exo 2;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: center;
+    color: #80858B;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.footer-dark {
+    width: 180px;
+    height: 24px;
+    font-family: Exo 2;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #FFFFFF;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.footer-light {
+    width: 180px;
+    height: 24px;
+    font-family: Exo 2;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #AFB2B6;
+    margin: 0 auto;
+    padding-top: 50px;
+}
