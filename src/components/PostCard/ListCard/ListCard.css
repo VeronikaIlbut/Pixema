@@ -1,0 +1,41 @@
+.ListCard-dark {
+    height: 100%;
+    width: 1150px;
+    background-color: bisque;
+    margin: 0 auto;
+}
+
+.ListCard-light {
+    height: 100%;
+    width: 1150px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.ListCard-box {
+    width: 1150px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button-show-more {
+    margin: 0 auto;
+}
+
+.show-more {
+    width: 160px;
+    height: 40px;
+    border-radius: 40px;
+    background: #6c6c6c;
+    color: white;
+    font-family: Exo 2;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.show-more {
+    cursor: pointer;
+}

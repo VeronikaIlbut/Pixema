@@ -1,0 +1,18 @@
+.input-name-dark {
+    font-family: Exo 2;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: white;
+}
+
+.input-name-light {
+    font-family: Exo 2;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: #242426;
+    ;
+}

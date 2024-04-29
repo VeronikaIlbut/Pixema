@@ -1,0 +1,112 @@
+/* .navigation-dark {
+    width: 210px;
+    height: 930px;
+    top: 48px;
+    left: 62px;
+    gap: 0px;
+    opacity: 0px;
+    background: #000000;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.navigation-light {
+    width: 210px;
+    height: 930px;
+    top: 48px;
+    left: 62px;
+    gap: 0px;
+    opacity: 0px;
+    background: white;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.navigation-box{
+    width: 120px;
+    height: 890px;
+    display: block;
+    justify-content: center;
+    
+}
+
+.btn-nav-dark {
+    width: 100%;
+    height: 25px;
+    font-family: Exo 2;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: #80858B;
+    padding: 0;
+    background: #000000;
+    border: none;
+    margin-top: 40px; 
+}
+
+.btn-nav-light {
+    width: 100%;
+    height: 25px;
+    font-family: Exo 2;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: #80858B;
+    padding: 0;
+    background: white;
+    border: none;
+    margin-top: 40px; 
+}
+
+.btn-nav-dark:hover{
+    cursor: pointer;
+}
+
+.btn-nav-light:hover{
+    cursor: pointer;
+}
+
+.bth-Home {
+    margin-left: 4px;
+    margin-right: 15px;
+}
+
+.bth-Trends {
+    margin-right: 13px;
+}
+
+.bth-Favorites {
+    margin-left: 3px;
+    margin-right: 16px;
+}
+
+.bth-Settings{
+    margin-left: 2px;
+    margin-right: 12px;
+}
+
+.footer-dark {
+    width: 180px;
+    height: 24px;
+    font-family: Exo 2;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+
+.footer-light {
+    width: 180px;
+    height: 24px;
+    font-family: Exo 2;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #AFB2B6;
+    margin: 0 auto;
+} */
