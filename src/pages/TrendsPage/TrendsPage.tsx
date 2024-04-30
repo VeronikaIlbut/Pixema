@@ -8,6 +8,7 @@ import {useSelector, useDispatch} from "react-redux";
 import { Movies } from "../../interfaces/interfaces";
 import {fetchTrends} from "../../redux/slice/trendsSlice";
 import {useEffect} from "react";
+import { Link } from 'react-router-dom';
 
 
 export default function TrendsPage() {
@@ -33,14 +34,13 @@ export default function TrendsPage() {
                 <div className='TrendsPage-box'>
                 {trendFilms.length > 0 && trendFilms.map((film:Movies) => (
                     <div className="film-container" key={film.imdbID}>
-                     <Card key={film.imdbID} source={film.Poster } 
-                        cardTitle={film.Title} 
-                        cardYear={film.Year} 
-                        imdbID={film.imdbID} >
-                    </Card> 
-                    </div>))}
-                    
-                      
+                     <Link to={`/movie/${film.imdbID}`}>
+                        <Card key={film.imdbID} 
+                            // source={film.Poster} 
+                            cardTitle={film.Title} 
+                            cardYear={film.Year} 
+                            imdbID={film.imdbID} ></Card> </Link>
+                    </div>))}  
                 </div>
                 <Footer styleFooter={`footer-${color}`}></Footer>
             </div>

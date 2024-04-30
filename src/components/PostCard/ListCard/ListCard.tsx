@@ -7,12 +7,14 @@ import {useEffect, useState} from "react";
 import { Link } from 'react-router-dom';
 import Button from '../../Button/Button';
 
+
+
+
 export default function ListCard() {
 
     const dispatch = useDispatch <any>();
     const [page, setPage] = useState<number>(1);
     const handlePage = () => setPage((prevPage) => ++prevPage);
-    
     
 
     const films = useSelector ((state:any) => state.movies.films);
@@ -22,14 +24,14 @@ export default function ListCard() {
 
     useEffect(() => {
         dispatch(fetchAllmovies({titleFilm, page}))
-    },[titleFilm, page])
+    },[ page])
 
     return (
         <> 
             <div className="ListCard-box">
             {films.map((films:Movies)  => (
                 <div className="film-container" key={films.imdbID}>
-                    <Link to="/movie">
+                    <Link to={`/movie/${films.imdbID}`}>
                         <Card key={films.imdbID} 
                             source={films.Poster} 
                             cardTitle={films.Title} 

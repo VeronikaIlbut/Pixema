@@ -37,7 +37,6 @@ const moviesSlice = createSlice({
             state.status = "resolved";
             state.error = null;
             state.films.push(...payload.Search);
-            console.log(payload.Search)
         }),
         builder.addCase(fetchAllmovies.rejected, isError)
     }

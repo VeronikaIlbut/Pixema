@@ -40,7 +40,6 @@ const filmSlice = createSlice({
             state.error = null;
             console.log (payload)
             state.selectedFilm = payload;
-            console.log (state.selectedFilm)
         }),
         builder.addCase(fetchOneFilm.rejected, isError)
     }

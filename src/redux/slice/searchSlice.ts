@@ -10,14 +10,13 @@ interface searchState {
 }
 interface searchParams {
     title: string;
-    page: number;
 }
 
 export const fetchSearch = createAsyncThunk <MovieResp, searchParams> (
     'search/fetchSearch',
-    async function ({ title, page }, {rejectWithValue}) {
+    async function ({ title }, {rejectWithValue}) {
         try {
-            const responce = await fetch(`https://www.omdbapi.com/?apikey=${ApiKey}&s=${title}&page=${page}`);
+            const responce = await fetch(`https://www.omdbapi.com/?apikey=${ApiKey}&s=${title}`);
             if (!responce.ok) {
                 throw new Error("Error")
             }

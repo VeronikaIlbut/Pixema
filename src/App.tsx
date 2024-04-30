@@ -27,8 +27,8 @@ import TrendsPage from './pages/TrendsPage/TrendsPage';
           <Route path="/" element={<MainPage/>}></Route>
           <Route path="/settings" element={<Settings/>}></Route>
           <Route path="/favorites" element={<FavoritesPage/>}></Route>
-           {/* <Route path="/movie/:imdbID" element={<MoviePage/>}></Route> */}
-          <Route path="/movie" element={<MoviePage/>}></Route>
+          <Route path="/movie/:imdbID" element={<MoviePage/>}></Route>
+          {/* <Route path="/movie" element={<MoviePage/>}></Route> */}
           <Route path="/search" element={<SearchPage/>}></Route>
           <Route path="/trends" element={<TrendsPage/>}></Route> 
           
