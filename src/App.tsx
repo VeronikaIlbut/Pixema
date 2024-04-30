@@ -30,19 +30,19 @@ import TrendsPage from './pages/TrendsPage/TrendsPage';
            {/* <Route path="/movie/:imdbID" element={<MoviePage/>}></Route> */}
           <Route path="/movie" element={<MoviePage/>}></Route>
           <Route path="/search" element={<SearchPage/>}></Route>
-          <Route path="/trends" element={<TrendsPage/>}></Route>
+          <Route path="/trends" element={<TrendsPage/>}></Route> 
           
 
-           {/* <SingIn></SingIn> */}
-        {/* <SingUp></SingUp>
+           {/* <SingIn></SingIn>
+        <SingUp></SingUp>
         <ResetPassword></ResetPassword>
         <NewPassword></NewPassword>  */}
 
-        </Routes>
+         </Routes>
 
       </ThemeContext>
     
-    </BrowserRouter>
+    </BrowserRouter> 
       
     </>
 

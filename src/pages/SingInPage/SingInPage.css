@@ -4,7 +4,6 @@ body {
 
 .singIn {
     width: 100%;
-    /* height: 100%; */
     height: 1100px;
     background: #000000;
 }
@@ -12,9 +11,8 @@ body {
 
 .singIn-background {
     width: 100%;
-    /* height: 100%; */
     height: 1100px;
-    background-image: url(/src/assets/Frame.svg);
+    background-image: url(/src/assets/Frame.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover; 
@@ -22,9 +20,8 @@ body {
 
 .singIn-box {
     width: 95%;
-    /* height: 95%; */
     height: 1000px;
-    margin: 0 auto;    
+    margin: 0 auto;
 }
 
 .singIn-btnPixema {
