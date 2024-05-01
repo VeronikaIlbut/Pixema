@@ -4,13 +4,24 @@
     /* margin-left: 10px; */
     background-color: black;
     margin: 10px;
+    border-radius: 20px;
+    transition: 1s;
+}
+.Card-dark:hover {
+    transform: scale(1.2);
 }
 
 .Card-light {
     width: 266px;
     height: 420px;
     margin-left: 10px;
+    border-radius: 20px;
     background-color: white;
+    transition: 1s;
+}
+
+.Card-light:hover {
+    transform: scale(1.2);
 }
 
 .Card-post {

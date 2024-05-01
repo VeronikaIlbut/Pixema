@@ -8,6 +8,7 @@ import './SingInPage.css';
 import { useContext } from 'react';
 import {myContext} from '../../providers/ThemeContext'
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 
 
 export default function SingIn() {
@@ -21,9 +22,12 @@ export default function SingIn() {
         <div className="singIn">
             <div className="singIn-background">
                 <div className="singIn-box">
-                    <Button styleBtn='singIn-btnPixema singIn-btnPixema_hover'>
-                        <img src={Pixema} alt="pixema" />
-                    </Button>
+                    <Link to="/">
+                        <Button styleBtn='singIn-btnPixema singIn-btnPixema_hover'>
+                            <img src={Pixema} alt="pixema" />
+                        </Button>
+                    </Link>
+                    
                     <form className={`singIn-box-form-${color}`}>
                         <Title>Sing In</Title>
                         
@@ -44,11 +48,16 @@ export default function SingIn() {
                                 setInputValue={(e) => setPassword(e.target.value)}
                                 inputValue={password}></Inputs>
                         
-                        <Button styleBtn={`mini-button-${color}`}>Forgot password?</Button>
+                        
+                        <Link to="/ResetPassword">
+                            <Button styleBtn={`mini-button-${color}`}>Forgot password?</Button>
+                        </Link>
 
                         <Button styleBtn='btn-singIn btn-singIn_hover'>Sing In</Button>
                         <span className={`text-${color}`}>Don't have an account?
-                            <Button styleBtn={`btn-mini-singIn-${color}`}>Sing Up</Button>
+                            <Link to="/SingUp">
+                                <Button styleBtn={`btn-mini-singIn-${color}`}>Sing Up</Button>
+                            </Link>
                         </span>
 
                     </form>

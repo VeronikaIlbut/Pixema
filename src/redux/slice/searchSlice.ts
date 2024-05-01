@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { MovieResp, Movies,} from "../../interfaces/interfaces";
 
-const ApiKey = "113df6aa";
+const ApiKey = "32ac23e8";
 
 interface searchState {
     search: Movies[];
@@ -10,13 +10,14 @@ interface searchState {
 }
 interface searchParams {
     title: string;
+    page: number;
 }
 
 export const fetchSearch = createAsyncThunk <MovieResp, searchParams> (
     'search/fetchSearch',
-    async function ({ title }, {rejectWithValue}) {
+    async function ({ title, page }, {rejectWithValue}) {
         try {
-            const responce = await fetch(`https://www.omdbapi.com/?apikey=${ApiKey}&s=${title}`);
+            const responce = await fetch(`https://www.omdbapi.com/?apikey=${ApiKey}&s=${title}&page=${page}`);
             if (!responce.ok) {
                 throw new Error("Error")
             }
@@ -64,6 +65,10 @@ const isError = (state: searchState, {payload}: {payload: any}) => {
 
 const { reducer} = searchSlice;
 export default reducer;
+
+
+
+
 
 
 

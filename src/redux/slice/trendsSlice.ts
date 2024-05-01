@@ -3,7 +3,7 @@ import { MovieResp, TrendState} from "../../interfaces/interfaces";
 
 const ApiKey = "32ac23e8";
 
-export const fetchTrends = createAsyncThunk <MovieResp, string > (
+export const fetchTrends = createAsyncThunk <MovieResp, string | undefined > (
     'trends/fetchTrends',
     async function (title, {rejectWithValue}) {
         try {

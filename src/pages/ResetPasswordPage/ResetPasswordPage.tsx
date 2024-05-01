@@ -7,6 +7,7 @@ import './ResetPasswordPage.css';
 import { useContext } from 'react';
 import {myContext} from '../../providers/ThemeContext'
 import { useState } from "react"; 
+import { Link } from 'react-router-dom';
 
 
 export default function ResetPassword() {
@@ -20,10 +21,11 @@ export default function ResetPassword() {
         <div className="ResetPassword">
             <div className="ResetPassword-background">
                 <div className='ResetPassword-box'>
-                    <Button styleBtn='ResetPassword-btnPixema ResetPassword-btnPixema_hover'>
-                        <img src={Pixema} alt="pixema" />
-                    
-                    </Button>
+                    <Link to="/">
+                        <Button styleBtn='ResetPassword-btnPixema ResetPassword-btnPixema_hover'>
+                            <img src={Pixema} alt="pixema" />
+                        </Button>
+                    </Link>
                     <form className={`ResetPassword-box-form-${color}`}>
                         <Title>Reset password</Title>
                         
@@ -35,7 +37,9 @@ export default function ResetPassword() {
                                 setInputValue = {e => setEmail(e.target.value)}
                                 inputValue = {email}></Inputs>
 
-                        <Button styleBtn='btn-ResetPassword btn-ResetPassword_hover'>Reset</Button>
+                        <Link to="/NewPassword">
+                            <Button styleBtn='btn-ResetPassword btn-ResetPassword_hover'>Reset</Button>
+                        </Link>
                     </form>
                 </div>
                 <Footer styleFooter='footer'></Footer>

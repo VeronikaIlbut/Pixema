@@ -2,21 +2,21 @@ import Home from '../../assets/Home.svg';
 import Trends from '../../assets/Trends.svg';
 import Favorites from '../../assets/Favorites.svg';
 import Settings from '../../assets/Settings.svg';
-import Search from '../../assets/search.png';
-import Close from '../../assets/Close.svg';
-import ArrowRight from '../../assets/Arrow Right.png';
 import Pixema from '../../assets/Pixema.png';
 import PixemaLight from '../../assets/PixemaLight.png';
 import Filter from '../../assets/Filter.svg';
 import Button from '../Button/Button';
-import { useContext, useState } from 'react';
+// import { useContext, useState, useEffect } from 'react';
+import {useState, useContext, ChangeEvent, FormEvent, useEffect} from "react";
 import {myContext} from '../../providers/ThemeContext'
 import './Header.css';
 import Title from '../Title/Title';
-import UserAuth from '../UserAuth/UserAuth';
-import Inputs from '../Inputs/Inputs';
+import UserAuth from '../User/User';
 import { Link } from 'react-router-dom';
-
+// import { useNavigate, generatePath, Link } from "react-router-dom";
+import Search from "../../assets/search.png";
+import { useDispatch, useSelector} from "react-redux";
+import { fetchSearch } from "../../redux/slice/searchSlice";
 
 
 export default function Header() {
@@ -24,19 +24,23 @@ export default function Header() {
     const [isOpen, setOpen] = useState(false);
     const [isOpenNav, setOpenNav] = useState(false);
 
-    function openFilter() {
-        setOpen(!isOpen);
-        console.log(isOpen)
-    }
+    // function openFilter() {
+    //     setOpen(!isOpen);
+    //     console.log(isOpen)
+    // }
 
     function openNavigation() {
         setOpenNav(!isOpenNav);
-        console.log(isOpen)
     }
 
     const [color] = useContext(myContext);
 
-    let userName = 'Artem Lapitsky'
+    const [search, setSearch] = useState<string>("");
+
+  
+
+
+    let userName = 'Sing In'
     let userInitials = userName.split(" ").map(item => item.slice(0, 1)).join("")
 
     return(
@@ -77,27 +81,30 @@ export default function Header() {
                 }
 
 
-                
-                
-          
 
-                <div className={`Header-search-${color}`}>
-                    
-                    <input type='text'
-                            placeholder='Search...'
-                            className={`Header-box-search-${color}`}>
+                <form className={`Header-search-${color}`} 
+                // onSubmit={handleSearch}
+                >
+                    <input  type='text' 
+                            className={`Header-box-search-${color}`}
+                            disabled={false}
+                            placeholder='Search...' 
+                            // value = {search}
+                            // onChange={handleSearchValue} 
+                            // onChange={(e) => setSearch(e.target.value)} 
+                            onChange={(e) => setSearch(e.target.value)} 
+                            id="search"
+                            >
                     </input>
-
                     <Link to="/search">
-                        <Button styleBtn={`Header-bthSearch-${color}`} 
-                                // onClick={() => openFilter()}
-                                >
+                        <Button styleBtn={`Header-bthSearch-${color}`}>
                             <img src={Search} alt="Search" />
                         </Button> 
                     </Link>
-                    
-                </div>
-                
+                </form>
+
+
+    
                 {/* <div className={`filter-box ${isOpen ? "active" : ""}`}>
                     <div>
                         <Title>Filters</Title>
@@ -137,7 +144,9 @@ export default function Header() {
 
                 </div>  */}
 
+                {/* <UserAuth initials={userInitials} name={userName}></UserAuth> */}
                 <UserAuth initials={userInitials} name={userName}></UserAuth>
+
                 
                 
             

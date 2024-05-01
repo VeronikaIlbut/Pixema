@@ -28,15 +28,12 @@ import TrendsPage from './pages/TrendsPage/TrendsPage';
           <Route path="/settings" element={<Settings/>}></Route>
           <Route path="/favorites" element={<FavoritesPage/>}></Route>
           <Route path="/movie/:imdbID" element={<MoviePage/>}></Route>
-          {/* <Route path="/movie" element={<MoviePage/>}></Route> */}
           <Route path="/search" element={<SearchPage/>}></Route>
           <Route path="/trends" element={<TrendsPage/>}></Route> 
-          
-
-           {/* <SingIn></SingIn>
-        <SingUp></SingUp>
-        <ResetPassword></ResetPassword>
-        <NewPassword></NewPassword>  */}
+          <Route path="/SingIn" element={<SingIn/>}></Route> 
+          <Route path="/SingUp" element={<SingUp/>}></Route> 
+          <Route path="/ResetPassword" element={<ResetPassword/>}></Route> 
+          <Route path="/NewPassword" element={<NewPassword/>}></Route> 
 
          </Routes>
 

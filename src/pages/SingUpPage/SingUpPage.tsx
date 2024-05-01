@@ -7,6 +7,7 @@ import './SingUpPage.css';
 import { useContext } from 'react';
 import {myContext} from '../../providers/ThemeContext'
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 
 // import Title from "../../components/Title/Title";
 // import Inputs from '../../components/Inputs/Inputs';
@@ -28,9 +29,13 @@ export default function SingUp() {
         <div className="singUp">
             <div className="singUp-background">
                 <div className='singUp-box'>
+                    
+                <Link to="/">
                     <Button styleBtn='singUp-btnPixema singUp-btnPixema_hover'>
                         <img src={Pixema} alt="pixema" />
                     </Button>
+                </Link>
+                    
                     <form className={`singUp-box-form-${color}`}>
                         
                         <Title>Sing Up</Title>
@@ -71,7 +76,10 @@ export default function SingUp() {
                         <Button styleBtn='btn-singUp btn-singUp_hover' >Sing Up</Button>
 
                         <span className={`text-${color}`}>Already have an account?
-                            <Button styleBtn={`btn-mini-singIn-${color}`}>Sing In</Button>
+                            <Link to="/SingIn">
+                                <Button styleBtn={`btn-mini-singIn-${color}`}>Sing In</Button>
+                            </Link>
+                            
                         </span>
 
                     </form>

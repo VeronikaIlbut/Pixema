@@ -1,7 +1,6 @@
 import Header from '../../components/Header/Header';
 import Title from '../../components/Title/Title';
 import './SettingsPage.css';
-
 import Light from '../../assets/Light.svg';
 import Dark from '../../assets/Dark.svg';
 import Button from '../../components/Button/Button';
@@ -16,9 +15,12 @@ export default function Settings() {
 
     const [color, setColor] = useContext(myContext);
 
-    function changeColor() {
-        setColor(color === "light" ? "dark" : "light")
-    }
+    function changeColorDark () {
+        setColor ("dark");
+    };
+    function changeColorLight () {
+        setColor ("light");
+    };
     return(
         
     <>
@@ -76,10 +78,10 @@ export default function Settings() {
                 <div className='Settings-box-color'>
                     <Title>Color mode</Title>
                     <div className={`box-color-${color}`}>
-                        <Button onClick={changeColor} styleBtn='btn-light '>
+                        <Button onClick={changeColorLight} styleBtn='btn-light '>
                             <img className='header-burger-nav-theme' src={Light} alt='light'></img>
                         </Button>
-                        <Button onClick={changeColor} styleBtn='btn-dark '>
+                        <Button onClick={changeColorDark} styleBtn='btn-dark '>
                             <img className='header-burger-nav-theme' src={Dark} alt='dark'></img>
                         </Button>
                     </div> 

@@ -7,10 +7,9 @@ import ListCard from '../../components/PostCard/ListCard/ListCard';
 
 
 
-
 export default function MainPage() {
 
-    const [color, setColor] = useContext(myContext);
+    const [color] = useContext(myContext);
 
     return(    
         <>
@@ -21,8 +20,6 @@ export default function MainPage() {
                 </div>
                 <Footer styleFooter={`footer-${color}`}></Footer>
             </div>
-            
-
         </>
     )
 }

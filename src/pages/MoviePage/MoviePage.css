@@ -13,7 +13,7 @@
 }
 
 .MoviePage-box {
-    width: 1000px;
+    width: 65%;
     height: 900px;
     margin: 0 auto;
     display: flex;
@@ -147,7 +147,6 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
-    margin-bottom: 40px;
 }
 
 .film-description-light {
@@ -158,7 +157,6 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
-    margin-bottom: 40px;
 }
 
 .info-box {

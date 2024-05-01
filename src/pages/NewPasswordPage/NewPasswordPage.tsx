@@ -7,6 +7,7 @@ import './NewPasswordPage.css';
 import { useContext } from 'react';
 import {myContext} from '../../providers/ThemeContext'
 import { useState } from "react"; 
+import { Link } from 'react-router-dom';
 
 
 
@@ -22,10 +23,12 @@ export default function NewPassword() {
         <div className="NewPassword">
             <div className="NewPassword-background">
                 <div className='NewPassword-box'>
-                    <Button styleBtn='NewPassword-btnPixema NewPassword-btnPixema_hover'>
-                        <img src={Pixema} alt="pixema" />
+                    <Link to="/">
+                        <Button styleBtn='NewPassword-btnPixema NewPassword-btnPixema_hover'>
+                            <img src={Pixema} alt="pixema" />
+                        </Button>
+                    </Link>
                     
-                    </Button>
                     <form className={`NewPassword-box-form-${color}`}>
                         <Title>New password</Title>
                         
